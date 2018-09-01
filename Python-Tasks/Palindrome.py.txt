@@ -1,0 +1,19 @@
+a=list()
+for i in range (11):
+	a.append(input())
+# Enter indexes of strings that you want to concatenate
+# and check for palindromes
+x=int(input())
+y=int(input())
+z=int(input())
+
+b= a[x]+a[y]+a[z]
+t=0
+for j in range (len(b)):
+	if b[j]!=b[(-1-j)]:
+		t-=1
+
+if t<0:
+	print('Not a Palindrome')
+else:
+	print('Yes it is a palindrome')

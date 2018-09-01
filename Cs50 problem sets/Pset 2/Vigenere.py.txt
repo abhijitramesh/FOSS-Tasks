@@ -1,0 +1,13 @@
+import string
+def shift(x,y):
+	upper = string.ascii_uppercase
+	lower = string.ascii_lowercase
+	n = []
+	for i in range(len(x)):
+		if x[i].isupper() is True:
+			n.append(upper[((upper.index(x[i])+upper.index(y[i%len(y)])))%26])
+	return n
+
+x = input()
+key = input()
+print("".join(shift(x, key)))

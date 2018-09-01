@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login page</title>
+	<style>
+      body{
+      	background-color:rgb(128, 204, 255);
+      }
+   </style>
+   <script type="text/javascript">
+   	function check()
+   {
+   	 var username = document.getElementById("username").value;
+     var password = document.getElementById("password").value;
+     if ( username == "admin" && password == "admin")
+     {
+          alert ("Login successful");
+     }
+     else
+     {
+          alert("Invalid username or password");
+     }
+     return false;
+   }
+   </script>
+</head>
+   <body>
+   	<br><br><br><br><br><br><br>
+   	<form align="center">
+   	<h2>Login</h2>
+   	<p>Username</p>
+   	<input type="text" name="Username" id="username"><br>
+   	<p>Password</p>
+   	<input type="password" name="password" id="password"><br>
+   	<br>
+   	<input type="button" value="Login" onclick="check()">
+   </form>
+   </body>
+</html>
