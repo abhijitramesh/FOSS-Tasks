@@ -1,7 +1,7 @@
 from urllib.request import urlopen as urlopen
 from bs4 import BeautifulSoup as BeautifulSoup
 url=input("Enter url:")
-print("Edit .select method by giving the class or id you want to scrape from the webpage.")
+# Edit .select method in line 10 by giving the class or id you want to scrape from the webpage.
 req = urlopen(url)
 htmltext= req.read()
 req.close()
