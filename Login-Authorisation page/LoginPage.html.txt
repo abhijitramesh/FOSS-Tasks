@@ -4,11 +4,11 @@
 	<title>Login page</title>
 	<style>
       body{
-      	background-color:rgb(128, 204, 255);
+      	background-color:rgb(128, 204, 255); <!-- presetting background colour-->
       }
    </style>
    <script type="text/javascript">
-   	function check()
+   	function check() <!-- function to check if the user id and password enterd by the user is valid -->
    {
    	 var username = document.getElementById("username").value;
      var password = document.getElementById("password").value;
@@ -28,7 +28,7 @@
    	<br><br><br><br><br><br><br>
    	<form align="center">
    	<h2>Login</h2>
-   	<p>Username</p>
+   	<p>Username</p> <!-- pre setting inputboxes-->
    	<input type="text" name="Username" id="username"><br>
    	<p>Password</p>
    	<input type="password" name="password" id="password"><br>
